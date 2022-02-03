@@ -14,9 +14,36 @@ PCASA (Prioritization of combinatorial cancer-associated surface antigens) is a 
 * keras (>= 2.6.0), tensorflow (>= 2.6.0), tf-keras-vis (>= 0.8.0)
 
 ## Running codes
-PCASA is a three-step program :
+PCASA is a three-step program
 * Step 1. prioritization of important single-genes well-classifying tumor and normal cells
 * Step 2. calculation of the expressing cell fraction (ECF) for each gene-combination
 * Step 3. prioritization of gene-combinations well-classifying tumor and normal cells.
-All of the steps can be run with the following command lines.
 
+### Input files
+> The first command for each step requires input data.
+* For step 1, a tab-delimited file containing cell-by-gene sparse matrix composed of log-transformed counts with a column showing the binary class (Tumor, 1; Normal, 0).
+* For steps 2 & 3, a two-column tab-delimited file containing cell-code and cell-type.
+* For steps 2 & 3, a tab-delimited file containing gene-by-cell sparse matrix composed of log-transformed counts.
+
+### RF - cell classifier for single genes
+```
+Rscript step-1a__random_forest.R input-1__scrna_class.txt
+#'input-1__scrna_class.txt': Cell-by-Gene-Matrix-with-Class
+
+python step-1b__random_forest.py
+```
+### Expression logic evaluator for ECF
+```
+python step-2__gate_coverage_calc.py input-2a__scrna_annotation.txt input-2b__scrna_gc-matrix.txt
+#'input-2a__scrna_annotation.txt' : Cell-Type-Annotation
+#'input-2b__scrna_gc-matrix.txt' : Gene-by-Cell-sparse-Matrix
+```
+### CNN - cell classifier for gene combinations
+```
+python step-3a__cnn_gradcam.py input-2a__scrna_annotation.txt input-2b__scrna_gc-matrix.txt
+#'input-2a__scrna_annotation.txt' : Cell-Type-Annotation
+#'input-2b__scrna_gc-matrix.txt' : Gene-by-Cell-sparse-Matrix
+
+python step-3b__cnn_gradcam.py
+python step-3c__cnn_gradcam.py
+```
