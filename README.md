@@ -28,21 +28,21 @@ PCASA is a three-step program
 ### RF - cell classifier for single genes
 ```
 Rscript step-1a__random_forest.R input-1__scrna_class.txt
-#'input-1__scrna_class.txt': Cell-by-Gene-Matrix-with-Class
+# 'input-1__scrna_class.txt': Cell-by-Gene-Matrix-with-Class
 
 python step-1b__random_forest.py
 ```
 ### Expression logic evaluator for ECF
 ```
 python step-2__gate_coverage_calc.py input-2a__scrna_annotation.txt input-2b__scrna_gc-matrix.txt
-#'input-2a__scrna_annotation.txt' : Cell-Type-Annotation
-#'input-2b__scrna_gc-matrix.txt' : Gene-by-Cell-sparse-Matrix
+# 'input-2a__scrna_annotation.txt' : Cell-Type-Annotation
+# 'input-2b__scrna_gc-matrix.txt' : Gene-by-Cell-sparse-Matrix
 ```
 ### CNN - cell classifier for gene combinations
 ```
 python step-3a__cnn_gradcam.py input-2a__scrna_annotation.txt input-2b__scrna_gc-matrix.txt
-#'input-2a__scrna_annotation.txt' : Cell-Type-Annotation
-#'input-2b__scrna_gc-matrix.txt' : Gene-by-Cell-sparse-Matrix
+# 'input-2a__scrna_annotation.txt' : Cell-Type-Annotation
+# 'input-2b__scrna_gc-matrix.txt' : Gene-by-Cell-sparse-Matrix
 
 python step-3b__cnn_gradcam.py
 python step-3c__cnn_gradcam.py
