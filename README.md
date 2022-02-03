@@ -1,5 +1,5 @@
 # PCASA
-PCASA (Prioritization of combinatorial cancer-associated surface antigens) is a tool for predicting the best gene combination targets of surface antigens by classification of malignant and non-malignant cells using single-cell RNA-seq data.
+#### PCASA (Prioritization of combinatorial cancer-associated surface antigens) is a tool for predicting the best gene combination targets of surface antigens by classification of malignant and non-malignant cells using single-cell RNA-seq data.
 
 ## Requirements
 > Required modules for RF (Random forest) in R.
@@ -15,10 +15,10 @@ PCASA (Prioritization of combinatorial cancer-associated surface antigens) is a 
 
 ## Running codes
 ### Overview
-PCASA is a three-step program
-* Step 1. prioritization of important single-genes well-classifying tumor and normal cells
-* Step 2. calculation of the expressing cell fraction (ECF) for each gene-combination
-* Step 3. prioritization of gene-combinations well-classifying tumor and normal cells.
+> PCASA is a three-step program
+* Step 1. Prioritization of important single-genes well-classifying tumor and normal cells.
+* Step 2. Calculation of the expressing cell fraction (ECF) for each gene combination.
+* Step 3. Prioritization of gene combinations well-classifying tumor and normal cells.
 
 ### Input files
 > The first command for each step requires input data.
