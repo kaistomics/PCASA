@@ -10,7 +10,8 @@ PCASA (Prioritization of combinatorial cancer-associated surface antigens) is a 
 > Required modules for CNN in Python.
 
 * Python (>= 3.6.9): https://www.python.org/downloads/source/
-* pip3 (>= 21.2.4), keras (>= 2.6.0), matplotlib (>= 3.3.4), numpy (>= 1.19.5), pandas (>= 1.1.5), scikit-learn (>= 0.24.1), tensorflow (>= 2.6.0), tf-keras-vis (>= 0.8.0)
+* pip3 (>= 21.2.4), matplotlib (>= 3.3.4), numpy (>= 1.19.5), pandas (>= 1.1.5), scikit-learn (>= 0.24.1), 
+* keras (>= 2.6.0), tensorflow (>= 2.6.0), tf-keras-vis (>= 0.8.0)
 
 ## 
 
