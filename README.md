@@ -25,7 +25,7 @@
 * For steps 2 & 3, a two-column tab-delimited file containing cell-code and cell-type.
 * For steps 2 & 3, a tab-delimited file containing gene-by-cell sparse matrix composed of log-transformed counts.
 
-### Step 1) RF - cell classifier for single genes
+### Step1) RF - cell classifier for single genes
 ```
 cd code
 
