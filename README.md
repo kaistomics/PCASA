@@ -4,7 +4,7 @@
 ## Requirements
 > Required modules for RF (Random forest) in R.
 
-* R (>= 3.6.0): https://cloud.r-project.org/bin/linux/ubuntu%bionic-cran40/
+* R (>= 3.6.0): https://cloud.r-project.org/bin/linux/ubuntu/
 * ROCR (>= 1.0-11), caret (>= 6.0-88), e1071 (>= 1.7-8), ggplot2 (>= 3.3.5), gplots (>=3.1.1), randomForest (>= 4.6-14), rpart (>= 4.1-15)
 
 > Required modules for CNN (Convolutional neural network) in Python.
