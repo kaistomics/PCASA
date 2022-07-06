@@ -88,7 +88,7 @@ library(randomForest)
 
 # script for learning random forest
 set.seed(1234)
-RF_model = randomForest(Tumor ~ ., data=data_train, ntree=100)
+RF_model = randomForest(Tumor ~ ., data=data_train, ntree=100, maxnodes=9)
 
 # result
 RF_model
