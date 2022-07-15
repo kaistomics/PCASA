@@ -55,10 +55,10 @@ python step-3c__cnn_gradcam.py
 ```
 
 ## Pre-process
-> This directory contains the codes for pre-processing of single-cell RNA-seq data.
+> The directory named 'preprocess' contains the codes for pre-processing.
 * Initial filtering, normalization, and dimensional reduction by Seurat
-* Cell-type annotation by SingleR
+* Reference-based cell-type annotation by SingleR
 * Aneuploid cell prediction by CopyKat
 * Volume-dependent sub-sampling by Geosketch
 * Batch correction by BBKNN
-* Geosketch and BBKNN codes are based on the module named SCJP.
+* Geosketch and BBKNN codes are based on the module named SCJP that Dr.Park made manually.
