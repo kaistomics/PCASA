@@ -14,7 +14,7 @@
 
 ## Running codes
 ### Overview
-> PCASA is a three-step program
+> PCASA is a three-step program.
 * Step 1. Prioritization of the single genes well-classifying tumor and normal cells.
 * Step 2. Calculation of the expressing cell fraction (ECF) for each gene combination.
 * Step 3. Prioritization of the gene combinations well-classifying tumor and normal cells.
