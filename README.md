@@ -55,9 +55,9 @@ python step-3c__cnn_gradcam.py
 ```
 
 ## Pre-process
-#### This directory contains the codes for pre-processing of single-cell RNA-seq data.
-> Initial filtering, normalization, and dimensional reduction by Seurat
-> Cell-type annotation by SingleR
-> Aneuploid cell prediction by CopyKat
-> Volume-dependent sub-sampling by GeometricSketch
-> Batch correction by BBKNN
+> This directory contains the codes for pre-processing of single-cell RNA-seq data.
+* Initial filtering, normalization, and dimensional reduction by Seurat
+* Cell-type annotation by SingleR
+* Aneuploid cell prediction by CopyKat
+* Volume-dependent sub-sampling by GeometricSketch
+* Batch correction by BBKNN
