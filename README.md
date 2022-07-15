@@ -61,3 +61,4 @@ python step-3c__cnn_gradcam.py
 * Aneuploid cell prediction by CopyKat
 * Volume-dependent sub-sampling by Geosketch
 * Batch correction by BBKNN
+* Geosketch and BBKNN codes are based on the module named SCJP
