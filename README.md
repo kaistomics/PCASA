@@ -25,7 +25,7 @@
 * For steps 2 & 3, a two-column tab-delimited file containing cell-code and cell-type.
 * For steps 2 & 3, a tab-delimited file containing gene-by-cell sparse matrix composed of log-transformed counts.
 
-### Step1. RF - cell classifier for single genes
+### Step1. RF - Cell classifier for single genes
 ```
 cd code
 
@@ -42,7 +42,7 @@ python step-2__gate_coverage_calc.py \
 # 'input-2a__scrna_annotation.txt' : Cell-Type-Annotation
 # 'input-2b__scrna_gc-matrix.txt' : Gene-by-Cell-sparse-Matrix
 ```
-### Step3. CNN - cell classifier for gene combinations
+### Step3. CNN - Cell classifier for gene combinations
 ```
 python step-3a__cnn_gradcam.py \
 ../data/input-2a__scrna_annotation.txt \
