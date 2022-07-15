@@ -59,5 +59,5 @@ python step-3c__cnn_gradcam.py
 * Initial filtering, normalization, and dimensional reduction by Seurat
 * Cell-type annotation by SingleR
 * Aneuploid cell prediction by CopyKat
-* Volume-dependent sub-sampling by GeometricSketch
+* Volume-dependent sub-sampling by Geosketch
 * Batch correction by BBKNN
