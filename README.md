@@ -1,5 +1,5 @@
 # PCASA
-#### PCASA (Prioritization of Combinatorial cancer-Associated Surface Antigens) is a tool for predicting the best gene combination targets of surface antigens by classification of malignant and non-malignant cells using single-cell RNA-seq data.
+#### PCASA (Prioritization of Combinatorial Cancer-Associated Surface Antigens) is a tool for predicting the best gene combination targets of surface antigens by classification of malignant and non-malignant cells using single-cell RNA-seq data.
 
 ## Requirements
 > Required modules for RF (Random forest) in R.
